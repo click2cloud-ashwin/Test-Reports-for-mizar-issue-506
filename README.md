@@ -1,4 +1,4 @@
-# Test report for deploying Arktos cluster with Mizar CNI on GCP
+# Test report for deploying Application pods on Arktos cluster with Mizar as CNI on GCP
 
 This document captures the steps to deploy an Arktos cluster lab with mizar cni. The machines in this lab used are n2-custom-16-32768 (16 CPUs, 32GB mem), Ubuntu 18.04 LTS.
 
