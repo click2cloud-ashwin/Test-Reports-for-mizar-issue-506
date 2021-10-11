@@ -976,12 +976,12 @@ kube-system   virtlet-mzvhl                      8706931631410429083   3/3     R
 ./cluster/kubectl.sh get vpc -Ao wide
 ```
 ***Output***
-
+```bigquery
 root@tesseract:~# ./cluster/kubectl.sh get vpcs  -o wide
 NAME   IP         PREFIX   VNI   DIVIDERS   STATUS        CREATETIME                   PROVISIONDELAY
 vpc0   20.0.0.0   8        1     1          Provisioned   2021-10-11T09:32:39.275336   21.090225
 root@tesseract:~#
-
+```
 
 ##### Check subnets
 ```bigquery
