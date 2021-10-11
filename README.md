@@ -1031,7 +1031,7 @@ default   mizar   system-default-network   Ready   10.0.0.86
 root@tesseract:~#
 ```
 
-##### check pods stastus after deploying application pods (kafka and zookeeper pods)
+##### check pods status after deploying application pods (kafka and zookeeper pods)
 ```bigquery
 ./cluster/kubectl.sh get pods -Ao wide
 ```
@@ -1040,9 +1040,9 @@ root@tesseract:~#
 root@tesseract:~# ./cluster/kubectl.sh get pods  -Ao wide 
 NAMESPACE     NAME                               HASHKEY               READY   STATUS            RESTARTS    AGE    IP              ODE      NOMINATED NODE   READINESS GATES
 default       kafka-556d74b878-tlcnb             8334294799958598409   1/1     CrashLoopBackOff   2          2m   20.0.0.18      tesseract   <none>           <none>
-default       mizar-daemon-svg8z                 5915807583702037959   1/1     Running            0          2m   10.138.0.6     tesseract   <none>           <none>
+default       mizar-daemon-svg8z                 5915807583702037959   1/1     Running            0          21m   10.138.0.6     tesseract   <none>           <none>
 default       mizar-operator-6f5ddb6fd5-g5s4p    5690885477719514628   1/1     Running            0          21m   10.138.0.6     tesseract   <none>           <none>
-default       zookeeper-6d5ff49b84-qlgx9         5218200621973899165   1/1     Running            0          18s   20.0.0.49      tesseract   <none>           <none>
+default       zookeeper-6d5ff49b84-qlgx9         5218200621973899165   1/1     Running            0          2m   20.0.0.49      tesseract   <none>           <none>
 kube-system   coredns-default-647bcd544d-rtrrg   1232052352497091929   1/1     Running            0          21m   20.0.0.26      tesseract   <none>           <none>
 kube-system   kube-dns-7f4bf79dc-5w97x           869072982459874969    3/3     Running            0          17m   20.0.0.30      tesseract   <none>           <none>
 kube-system   virtlet-mzvhl                      8706931631410429083   3/3     Running            1          20m   10.138.0.6     tesseract   <none>           <none>
